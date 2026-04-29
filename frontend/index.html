@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FoodTime</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Hamburger -->
+<div class="menu-container">
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+</div>
+
+<!-- Side Menu -->
+<div class="side-menu" id="sideMenu">
+    <a onclick="goHome()">Home</a>
+    <a onclick="goCategory('Meals')">Meals</a>
+    <a onclick="goCategory('Drinks')">Drinks</a>
+    <a onclick="goCategory('Events')">Events</a>
+    <a onclick="goCategory('Ingredients')">Ingredients</a>
+    <a onclick="goAbout()">About Us</a>
+</div>
+
+<div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+
+
+
+<!-- Overlay -->
+<div class="overlay" id="overlay" onclick="closeMenu()"></div>
+>
+  
+
+<!-- Header -->
+<header>
+    <img src="images/logo.jpg" class="logo">
+    <h1>FoodTime</h1>
+    <p>Cook your favorite meals with real recipes</p>
+</header>
+
+<!-- HOME SECTION -->
+<!-- HOME SECTION -->
+<section class="home-sections" id="home">
+<div class="home-card" onclick="window.location.href='category.html?category=Meals'">
+    <img src="images/meals.jpg">
+    <h3>Meals</h3>
+</div>
+<div class="home-card" onclick="window.location.href='category.html?category=Drinks'">
+    <img src="images/drinks.jpg">
+    <h3>Drinks</h3>
+</div>
+<div class="home-card" onclick="window.location.href='category.html?category=Events'">
+    <img src="images/events.jpg">
+    <h3>Events</h3>
+</div>
+<div class="home-card" onclick="window.location.href='category.html?category=Ingredients'">
+    <img src="images/ingredients.jpg">
+    <h3>Ingredients</h3>
+</div>
+</section>
+
+
+
+
+
+<section id="meals-section" style="display:none;">
+    <h2 id="meal-category-title" style="text-align:center;">Meals</h2>
+    <div class="home-sections" id="meal-cards-container">
+        <!-- Cards will be dynamically added here -->
+    </div>
+</section>
+
+
+<!-- ABOUT SECTION -->
+<section class="about" id="about">
+    <div class="about-content">
+        <img src="images/about.jpg" class="about-image">
+        <div class="about-text">
+            <h2>About Us</h2>
+            <p>
+                FoodTime is your trusted food companion, bringing together meals,
+                drinks, ingredients, and events in one beautiful place.
+                We believe cooking should be enjoyable, inspiring, and accessible
+                for everyone — whether you’re a beginner or a food lover.
+            </p>
+            <p>
+                Our goal is to make food exploration simple, visual, and delightful.
+                From everyday meals to special occasions, FoodTime is here to help
+                you enjoy every bite.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 FoodTime | Follow us on 
+        <a href="#">Instagram</a>, <a href="#">Facebook</a>
+    </p>
+</footer>
+
+<!-- JAVASCRIPT -->
+<script src="app.js"></script>
+</body>
+</html>

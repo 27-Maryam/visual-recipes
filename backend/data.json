@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Spaghetti Carbonara",
+    "image": "images/spaghetti.jpg",
+    "ingredients": ["Spaghetti", "Eggs", "Parmesan Cheese", "Pancetta", "Garlic", "Olive Oil"],
+    "steps": ["Boil pasta", "Cook pancetta with garlic", "Mix eggs and cheese", "Combine pasta and pancetta mix"],
+    "category": "Dinner"
+  },
+  {
+    "id": 2,
+    "name": "Veggie Omelette",
+    "image": "images/omelette.jpg",
+    "ingredients": ["Eggs", "Bell peppers", "Onions", "Tomatoes", "Cheese", "Salt & Pepper"],
+    "steps": ["Chop vegetables", "Beat eggs with salt & pepper", "Cook omelette in pan", "Add vegetables and cheese"],
+    "category": "Breakfast"
+  },
+  {
+    "id": 3,
+    "name": "Chicken Curry",
+    "image": "images/chicken-curry.jpg",
+    "ingredients": ["Chicken", "Onions", "Tomatoes", "Garlic", "Ginger", "Spices"],
+    "steps": ["Marinate chicken with spices", "Cook onions, garlic, ginger", "Add tomatoes and cook", "Add chicken and simmer"],
+    "category": "Lunch"
+  },
+  {
+    "id": 4,
+    "name": "Fruit Salad",
+    "image": "images/fruit-salad.jpg",
+    "ingredients": ["Apples", "Bananas", "Oranges", "Strawberries", "Grapes", "Honey"],
+    "steps": ["Chop all fruits", "Mix in a bowl", "Add honey and stir", "Serve chilled"],
+    "category": "Snack"
+  },
+  {
+    "id": 5,
+    "name": "Pancakes",
+    "image": "images/pancakes.jpg",
+    "ingredients": ["Flour", "Milk", "Eggs", "Sugar", "Baking Powder", "Butter"],
+    "steps": ["Mix dry ingredients", "Add milk and eggs to form batter", "Cook pancakes on pan", "Serve with butter or syrup"],
+    "category": "Breakfast"
+  }
+]

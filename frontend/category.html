@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FoodTime Category</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <img src="images/logo.jpg" class="logo">
+    <h1>FoodTime</h1>
+</header>
+
+<!-- Back button -->
+<div style="padding: 20px;">
+    <button onclick="goHome()">← Back to Home</button>
+</div>
+
+<!-- Sub-category Cards -->
+<section class="home-sections" id="sub-category-container">
+    <!-- Cards for Breakfast, Lunch, etc. will appear here dynamically -->
+</section>
+
+<!-- Category JS -->
+<script src="category.js"></script>
+
+<!-- Go Home Function -->
+<script>
+function goHome() {
+    window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>

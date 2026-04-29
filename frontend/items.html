@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FoodTime Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <h1>🍽️ Menu: <span id="subcategory-title"></span></h1>
+</header>
+
+<!-- Back Button -->
+<div style="padding: 20px;">
+    <button onclick="goBack()">← Back to Category</button>
+</div>
+
+<!-- Menu Container -->
+<div id="menu-container" class="menu-page">
+    <!-- Menu items will appear dynamically from items.js -->
+</div>
+
+<!-- JS -->
+<script src="items.js"></script>
+<script>
+    // Get subcategory from URL
+    const params = new URLSearchParams(window.location.search);
+    const subCategory = params.get("sub");
+
+    // Set the title
+    document.getElementById("subcategory-title").textContent = subCategory;
+
+    // Back button function
+    function goBack() {
+        // Go back to category page of this subcategory
+        window.location.href = `category.html?category=${encodeURIComponent(subCategoryCategory(subCategory))}`;
+    }
+
+    // Function to determine parent category of subcategory
+    function subCategoryCategory(sub) {
+        const mapping = {
+            "Breakfast":"Meals", "Lunch":"Meals", "Dinner":"Meals", "Snack":"Meals",
+            "Brunch":"Meals", "Appetizers":"Meals", "Soup":"Meals", "Desserts":"Meals",
+            "Juices":"Drinks","Smoothies":"Drinks","Cocktails":"Drinks","Tea":"Drinks","Coffee":"Drinks",
+            "Birthday":"Events","Party":"Events","Wedding":"Events","Festivals":"Events",
+            "Vegetables":"Ingredients","Fruits":"Ingredients","Spices":"Ingredients",
+            "Meat":"Ingredients","Dairy":"Ingredients"
+        };
+        return mapping[sub] || "Meals";
+    }
+</script>
+</body>
+</html>
