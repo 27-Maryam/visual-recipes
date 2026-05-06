@@ -21,11 +21,14 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           script: |
             cd /home/azureuser
+
             if [ ! -d "visual-recipes" ]; then
               git clone https://github.com/27-Maryam/visual-recipes.git
             fi
+
             cd visual-recipes
             git pull origin main
+
             sudo rm -rf /var/www/html/*
             sudo cp -r frontend/* /var/www/html/
             sudo systemctl restart apache2
