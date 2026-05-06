@@ -18,7 +18,7 @@ jobs:
         with:
           host: 40.81.28.236
           username: azureuser
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          key: ${{ secrets.SSH_KEY }}
           script: |
             cd /home/azureuser
             if [ ! -d "visual-recipes" ]; then
